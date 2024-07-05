@@ -30,21 +30,6 @@ def write_data(file_json, data):
         json.dump(data, file, indent=4)
 
 config.json_listings = load_json(file_json)
-
-
-def transport():
-    while True:
-        try:
-            print("\nSelect\n1) Local\n2) Shipping\n3) Both")
-            print("\n(IF YOU CHOOSE SHIPPING ONLY, CRAIGSLIST IS EXCLUDED)\n(IF YOU CHOOSE LOCAL ONLY, CRAIGSLIST, FACEBOOK MARKETPLACE, AND OFFERUP WILL BE AVAILABLE)")
-            transport_method_answer = int(input("CHOOSE AN ANSWER: "))
-            if transport_method_answer >= 1 and transport_method_answer <= 3:
-                config.transport_method = transport_method_answer
-                break
-            else:
-                print("Make sure to enter valid values from 1 --> 3")
-        except ValueError:
-            print("Enter Integer Values Only")
     
 
 def setting_price():
@@ -81,8 +66,6 @@ def setting_price():
             break
 
 def city():
-    if config.transport_method == 1 or config.transport_method == 3:
-        
         while True:
             try:
                 nearest_city_answer = str(input("\nName the closest/largest city to you: ")).lower().strip()
@@ -114,8 +97,6 @@ def city():
                     print("Please select a value within the range shown")
             except ValueError:
                 print("Enter Integer Values Only")
-    else:
-        config.city_number = 0
 
 
 
@@ -212,7 +193,6 @@ def specific_marketplaces():
 def all_marketplaces():
     config.init()
     setting_price()
-    transport()
     city()
     handle_query()
     all_together()
