@@ -1,0 +1,4 @@
+cdifflib
+bs4
+unidecode
+urllib3
