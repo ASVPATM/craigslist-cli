@@ -1,4 +1,4 @@
-# Craiglist-Cli
+# Craigslist-Cli
 ![image](https://github.com/ASVPATM/craiglist-cli/assets/159084542/b0b201f3-28c6-45fe-abe3-211e7f111df1)
 
 **Simple Craigslist CLI for ease of use**
