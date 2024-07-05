@@ -138,7 +138,7 @@ def all_together():
             elif searching_input == 3:
                     while True:
                                 try:
-                                    browser_index_input = int(input("Select the index of the listing you "
+                                    browser_index_input = int(input("Select the index of the listing "
                                                                     + "you would like to open in your browser: "))
                                     webbrowser.open(get_href_by_index(browser_index_input))
                                     break
