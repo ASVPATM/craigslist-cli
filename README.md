@@ -3,7 +3,6 @@
 
 **Simple Craigslist CLI for ease of use**
 
-**List of World Cities came from https://github.com/datasets/world-cities.git**
 
 # Setup
 Clone The Directory
