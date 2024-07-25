@@ -11,6 +11,8 @@ from bs4 import BeautifulSoup
 from colorama import Fore, Back, Style
 import requests
 from website import craigslist
+import matplotlib as plt
+import fontstyle
 
 file_json = 'listings_data.json'
 
@@ -40,21 +42,22 @@ def setting_price():
 
         while True:
             try:
-                max_min_answer = str(input("\nDo You Want To Set a Maximum/Minimum Price?\n (PRESS Y OR N): ")).lower().strip()
+                max_min_answer = str(input(Fore.LIGHTYELLOW_EX +"\nDo You Want To Set a Maximum/Minimum Price?\n (PRESS Y OR N): ")).lower().strip()
                 if max_min_answer == 'y' or max_min_answer == 'n':
                     answer = max_min_answer
                     break
                 else:
-                    print("Invalid Number, Please Select between 1 or 2")
+                    print(Fore.RED + "Invalid Number, Please Select between 1 or 2" )
                     print(str(attempts) + " Attempts Left")
                     attempts-=1
                     if attempts <= 0:
                         break
             except ValueError:
-                print("Invalid Input, Please Enter a Number") 
+                print(Fore.RED + "Invalid Input, Please Enter a Number") 
         while True:
             if answer == 'y':
                 try:
+                    print(Fore.LIGHTYELLOW_EX)
                     min_price_answer = int(input("Min: "))
                     max_price_answer = int(input("\nMax: "))
                     if min_price_answer >= 0 and min_price_answer <= max_price_answer:
@@ -62,31 +65,35 @@ def setting_price():
                         config.max_price = max_price_answer
                         break
                     else:
-                        print("Make sure to enter valid values for the maximum/minimum. The minimum should be > 0 and <= maximum")
+                        print(Fore.RED + "Make sure to enter valid values for the maximum/minimum. The minimum should be > 0 and <= maximum")
                 except ValueError:
-                    print("Enter Integer Values Only")
+                    print(Fore.RED + "Enter Integer Values Only")
             else:
                 break
     elif config.change_max_min_price == 'y':
     
             while True:
                 try:
-                    change_max_min_input = int(input("\n1) Change\n2) Get Rid Of\nAnswer Here: "))
+                    
+                    change_max_min_input = int(input(Fore.YELLOW + "\n1) Change\n2) Get Rid Of\nAnswer Here: "))
+                
                     if change_max_min_input == 1:
-                        min_price_answer = int(input("Min: "))
+                        
+                        min_price_answer = int(input(+ "Min: "))
                         max_price_answer = int(input("\nMax: "))
+                        
                         if min_price_answer >= 0 and min_price_answer <= max_price_answer:
                             config.min_price = min_price_answer
                             config.max_price = max_price_answer
                             break
                         else:
-                            print("Make sure to enter valid values for the maximum/minimum. The minimum should be > 0 and <= maximum")
+                            print(Fore.RED + "Make sure to enter valid values for the maximum/minimum. The minimum should be > 0 and <= maximum")
                     elif change_max_min_input == 2:
                         config.max_price = 0
                         config.min_price = 0
                         break
                 except ValueError:
-                    print("Please enter a Valid Value")
+                    print(Fore.RED + "Please enter a Valid Value")
 
 def city():
         config.avail_locations = []
@@ -94,9 +101,12 @@ def city():
         # Change City Stuff Here
         while True:
             try:
-                print("\n(Cities list based on Craigslist availability)")
-                region_answer_input = int(input("\nSelect the region you would like to search:\n1) United States\n2) "
-                                          +"Canada\n3) Europe\n4) Asia/Pacific/Middle/East\n5) Oceania\n6) Latin America\n7) Africa\nAnswer Here: " ))
+                intro = fontstyle.apply("\n(Cities list based on Craigslist availability)",
+                    "bold/Italic/purple")
+                print(intro)
+
+                region_answer_input = int(input(Fore.YELLOW + "\nSelect the region you would like to search:\n" + Fore.GREEN + "\n1) United States    2) "
+                                          +"Canada    3) Europe    4) Asia/Pacific/Middle/East\n     5) Oceania     6) Latin America     7) Africa\n"+ Fore.YELLOW +"Answer Here: "))
                 if region_answer_input >= 1 and region_answer_input <= 7:
                     if region_answer_input == 1:
                         config.region = "US"
@@ -114,11 +124,10 @@ def city():
                         config.region = "AF"   
                     break
                 else:
-                    print("Please select a value within the range")
+                    print(Fore.RED + "Please select a value within the range")
             except ValueError:
-                print("Enter a Valud Value")
+                print(Fore.RED + "Enter a Valud Value")
 
-        handle_Region_Area(config.region)
           
 
 def handle_Region_Area(region):
@@ -128,15 +137,22 @@ def handle_Region_Area(region):
                 state_answer_input = str(input("In what state would you like to search?: ")).strip().lower()
                 config.state_region = state_answer_input
                 fetchLocations(config.region, config.state_region)
-                break
+                if len(config.avail_locations) == 0:
+                    print(Fore.RED + "Not availiable in your region ")
+                    city()
+                else:
+                    print(Fore.YELLOW + "In " + Fore.GREEN + state_answer_input.capitalize() + Fore.YELLOW + ", you can search in: \n")
+                    break
             except ValueError:
                 print("Please Enter a Valid State")
-        print("In " + config.state_region + ", you can search in: \n")
+        
+        
         for x in range(0, len(config.avail_locations)):
-            if x % 2 == 1:
-                print(str(x+1) + ")" + f"{config.avail_locations[x]['name']}" + "\n")
+            print(Fore.GREEN)
+            if x == (len(config.avail_locations)/2):
+                print(str(x+1) + ") " + f"{config.avail_locations[x]['name']}".capitalize()+ "\n")
             else:
-                print(str(x+1) + ")" + f"{config.avail_locations[x]['name']}")
+                print(str(x+1) + ") "+ f"{config.avail_locations[x]['name']}".capitalize()+ " ")
         selectCity()
   
     else:
@@ -146,9 +162,9 @@ def handle_Region_Area(region):
 
                 for x in range(0, len(config.avail_locations_regions)):
                     if x % 2 == 1:
-                        print(str(x+1) + ")" + f"{config.avail_locations_regions[x]}" + "\n")
+                        print(str(x+1) + ")" + f"{config.avail_locations_regions[x]}".capitalize() + "\n")
                     else:
-                        print(str(x+1) + ")" + f"{config.avail_locations_regions[x]}")
+                        print(str(x+1) + ")" + f"{config.avail_locations_regions[x]}".capitalize())
                 country_answer_input = int(input("What region would you like to search?: "))
                 if country_answer_input >= 1 and country_answer_input <= len(config.avail_locations_regions):
                     fetchLocations(config.region, config.avail_locations_regions[country_answer_input-1])
@@ -157,26 +173,32 @@ def handle_Region_Area(region):
                     break
             except ValueError:
                 print("Please Enter a Valid Country")
-        print("In " + config.avail_locations_regions[country_answer_input-1] + ", you can search in: \n")
+                
+        if len(config.avail_locations) == 0:
+            print("Not availiable in your region ")
+            config.region = ''
+            city()
+        else:
+            print("In " + config.avail_locations_regions[country_answer_input-1] + ", you can search in: \n")
         for x in range(0, len(config.avail_locations)):
             if x % 2 == 1:
-                print(str(x+1) + ")" + f"{config.avail_locations[x]['name']}" + "\n")
+                print(str(x+1) + ")" + f"{config.avail_locations[x]['name']}".capitalize() + "\n")
             else:
-                print(str(x+1) + ")" + f"{config.avail_locations[x]['name']}")
+                print(str(x+1) + ")" + f"{config.avail_locations[x]['name']}".capitalize())
         selectCity()
         
 
 def selectCity():
     while True:
         try:
-            city_answer_input = int(input("Select a city you would like to search: ")) - 1
+            city_answer_input = int(input(Fore.YELLOW + "Select a city you would like to search: ")) - 1
             if city_answer_input >= 0 and city_answer_input <= len(config.avail_locations)-1:
                 config.city_url = config.avail_locations[city_answer_input]['href']
                 break
             else:
-                print("Please enter a value within the range")
+                print(Fore.RED + "Please enter a value within the range")
         except ValueError:
-            print("Wrong")
+            print(Fore.RED + "Wrong")
 
 
 
@@ -213,7 +235,7 @@ def fetchLocations(region, region_area):
 def handle_query():
     while True:
         try:
-            query_input = str(input("\nWhat would you like to look for today?: ")).strip()
+            query_input = str(input(Fore.YELLOW + "\nWhat would you like to look for today?: ")).strip()
             config.query = query_input
             break
 
@@ -233,7 +255,7 @@ def all_together():
                 craigslist.fetchPage(config.query, config.keep_looking_bottom, config.keep_looking_top)
                 config.keep_looking_bottom+=3
                 config.keep_looking_top+=3
-                searching_input = int(input("\nPress: \n1) Keep Searching  2) "
+                searching_input = int(input(Fore.YELLOW + "\nPress: \n1) Keep Searching  2) "
                                             +"Change Query  3)Change Price\n4) Change Location 5) Open in Browser  6) Stop Searching"
                                             +"\nAnswer Here: "))    
             else:
@@ -302,10 +324,12 @@ def get_href_by_index(index):
     
 
 def all_marketplaces():
+    #print(Back.BLACK)
     config.init()
     setting_price()
     #transport()
     city()
+    handle_Region_Area(config.region)
     handle_query()
     all_together()
 

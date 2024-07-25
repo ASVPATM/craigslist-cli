@@ -1,263 +1,56 @@
 [
     [
         {
+            "index": 0,
+            "title": "Laptop bag",
+            "href": "https://portland.craigslist.org/clk/sop/d/vancouver-laptop-bag/7762646790.html",
+            "price": "$15",
+            "location": "Vancouver"
+        }
+    ],
+    [
+        {
+            "index": 1,
+            "title": "Laptop bag",
+            "href": "https://portland.craigslist.org/clk/sop/d/vancouver-laptop-bag/7762959891.html",
+            "price": "$20",
+            "location": "Vancouver"
+        }
+    ],
+    [
+        {
+            "index": 2,
+            "title": "NIB Leather Wheeled 17\" Laptop Case",
+            "href": "https://portland.craigslist.org/wsc/for/d/portland-nib-leather-wheeled-17-laptop/7767544529.html",
+            "price": "$60",
+            "location": "NW Portland"
+        }
+    ],
+    [
+        {
             "index": 3,
-            "title": "BMW X5 3.5 i S Drive",
-            "href": "https://puertorico.craigslist.org/cto/d/bmw-x5-35-s-drive/7765280676.html",
-            "price": "$23,995",
-            "location": "Gurabo"
+            "title": "4gb SDRAM Laptop Ram",
+            "href": "https://portland.craigslist.org/wsc/sop/d/beaverton-4gb-sdram-laptop-ram/7765597807.html",
+            "price": "$15",
+            "location": "Beaverton"
         }
     ],
     [
         {
             "index": 4,
-            "title": "2007 Honda Odyssey 3000 OBO",
-            "href": "https://puertorico.craigslist.org/cto/d/2007-honda-odyssey-3000-obo/7767013677.html",
-            "price": "$3,000",
-            "location": "Ocala"
+            "title": "HP Laptop i3 15.6\" Touch Screen, Web Cam",
+            "href": "https://portland.craigslist.org/clc/sys/d/colton-hp-laptop-i3-156-touch-screen/7761709410.html",
+            "price": "$90",
+            "location": "Colton"
         }
     ],
     [
         {
             "index": 5,
-            "title": "Se Vende INFINITI EX35",
-            "href": "https://puertorico.craigslist.org/cto/d/se-vende-infiniti-ex35/7766950775.html",
-            "price": "$12,000",
-            "location": "San Juan"
-        }
-    ],
-    [
-        {
-            "index": 6,
-            "title": "2013 LEXUS ES350",
-            "href": "https://puertorico.craigslist.org/cto/d/2013-lexus-es350/7766517398.html",
-            "price": "$11,995",
-            "location": "San Juan"
-        }
-    ],
-    [
-        {
-            "index": 7,
-            "title": "Range Rover 2024",
-            "href": "https://puertorico.craigslist.org/cto/d/range-rover-2024/7766365932.html",
-            "price": "$170,000,000",
-            "location": "Edinita Nazario Avenue, Ponce PR"
-        }
-    ],
-    [
-        {
-            "index": 8,
-            "title": "Chevrolet Express Van 2500 Cargo 8 Doors",
-            "href": "https://puertorico.craigslist.org/cto/d/chevrolet-express-van-2500-cargo-doors/7766079264.html",
-            "price": "$5,300",
-            "location": "Carolina"
-        }
-    ],
-    [
-        {
-            "index": 9,
-            "title": "Se VENDE Ford Fiesta 2015",
-            "href": "https://puertorico.craigslist.org/cto/d/se-vende-ford-fiesta-2015/7765006921.html",
-            "price": "$3,800",
-            "location": "Patillas"
-        }
-    ],
-    [
-        {
-            "index": 10,
-            "title": "BMW 430i GRAND COUPE 2019",
-            "href": "https://puertorico.craigslist.org/cto/d/bmw-430i-grand-coupe-2019/7764908045.html",
-            "price": "$26,998",
-            "location": "San Juan"
-        }
-    ],
-    [
-        {
-            "index": 11,
-            "title": "Jeep Wrangler 2021",
-            "href": "https://puertorico.craigslist.org/cto/d/jeep-wrangler-2021/7764597817.html",
-            "price": "$33,995",
-            "location": "Dorado PR"
-        }
-    ],
-    [
-        {
-            "index": 12,
-            "title": "Subaru Impreza 2018",
-            "href": "https://puertorico.craigslist.org/cto/d/subaru-impreza-2018/7764579835.html",
-            "price": "$23,995",
-            "location": "Dorado PR"
-        }
-    ],
-    [
-        {
-            "index": 13,
-            "title": "Toyota 4Runner 2011",
-            "href": "https://puertorico.craigslist.org/cto/d/toyota-4runner-2011/7764575731.html",
-            "price": "$23,995",
-            "location": "Dorado PR"
-        }
-    ],
-    [
-        {
-            "index": 14,
-            "title": "70Th Aniversary Corvette 2023",
-            "href": "https://puertorico.craigslist.org/cto/d/70th-aniversary-corvette-2023/7764267008.html",
-            "price": "$122,995",
-            "location": "Mall Of San Juan"
-        }
-    ],
-    [
-        {
-            "index": 15,
-            "title": "Toyota Corolla 2019",
-            "href": "https://puertorico.craigslist.org/cto/d/toyota-corolla-2019/7764042900.html",
-            "price": "$19,995",
-            "location": "Dorado PR"
-        }
-    ],
-    [
-        {
-            "index": 16,
-            "title": "Chevrolet Traverse 2017",
-            "href": "https://puertorico.craigslist.org/cto/d/chevrolet-traverse-2017/7763636552.html",
-            "price": "$12,995",
-            "location": "Dorado PR"
-        }
-    ],
-    [
-        {
-            "index": 17,
-            "title": "2015 Toyota Tacoma",
-            "href": "https://puertorico.craigslist.org/ctd/d/2015-toyota-tacoma/7762973007.html",
-            "price": "$5,500",
-            "location": "puerto rico"
-        }
-    ],
-    [
-        {
-            "index": 18,
-            "title": "Transit T250 Carga",
-            "href": "https://puertorico.craigslist.org/cto/d/transit-t250-carga/7762867932.html",
-            "price": "$41,995",
-            "location": "Dorado PR"
-        }
-    ],
-    [
-        {
-            "index": 19,
-            "title": "2019 Jeep Cherokee Latitude",
-            "href": "https://puertorico.craigslist.org/cto/d/2019-jeep-cherokee-latitude/7762752959.html",
-            "price": "$21,000",
-            "location": "Caguas PR"
-        }
-    ],
-    [
-        {
-            "index": 20,
-            "title": "KIA FORTE 5 HATCHBACK 60K MILES MINT COND.",
-            "href": "https://puertorico.craigslist.org/cto/d/kia-forte-hatchback-60k-miles-mint-cond/7762749735.html",
-            "price": "$6,900",
-            "location": "San Juan"
-        }
-    ],
-    [
-        {
-            "index": 21,
-            "title": "KIA RIO 2022 AUTOMATICO SALDO",
-            "href": "https://puertorico.craigslist.org/cto/d/kia-rio-2022-automatico-saldo/7762695001.html",
-            "price": "$11,900",
-            "location": "Bayamon"
-        }
-    ],
-    [
-        {
-            "index": 22,
-            "title": "2010 Toyota RAV4",
-            "href": "https://puertorico.craigslist.org/ctd/d/2010-toyota-rav4/7762671982.html",
-            "price": "$2,800",
-            "location": "puerto rico"
-        }
-    ],
-    [
-        {
-            "index": 23,
-            "title": "2019 Toyota Tacoma Double Cab - Call Now!",
-            "href": "https://puertorico.craigslist.org/ctd/d/2019-toyota-tacoma-double-cab-call-now/7758574181.html",
-            "price": "$13,400",
-            "location": "Miami, FL"
-        }
-    ],
-    [
-        {
-            "index": 24,
-            "title": "Car for Sale",
-            "href": "https://puertorico.craigslist.org/ctd/d/car-for-sale/7757932879.html",
-            "price": "$3,400",
-            "location": "San Juan"
-        }
-    ],
-    [
-        {
-            "index": 25,
-            "title": "2014 Chevrolet Corvette - Call Now!",
-            "href": "https://puertorico.craigslist.org/ctd/d/2014-chevrolet-corvette-call-now/7756793590.html",
-            "price": "$15,400",
-            "location": "Miami, FL"
-        }
-    ],
-    [
-        {
-            "index": 26,
-            "title": "2021 Ford F150 Super Cab - Call Now!",
-            "href": "https://puertorico.craigslist.org/ctd/d/2021-ford-f150-super-cab-call-now/7756793506.html",
-            "price": "$9,900",
-            "location": "Miami, FL"
-        }
-    ],
-    [
-        {
-            "index": 27,
-            "title": "2017 Nissan Altima - Call Now!",
-            "href": "https://puertorico.craigslist.org/ctd/d/2017-nissan-altima-call-now/7756793626.html",
-            "price": "$4,400",
-            "location": "Miami, FL"
-        }
-    ],
-    [
-        {
-            "index": 28,
-            "title": "1983 Lincoln Continental Mark VI",
-            "href": "https://puertorico.craigslist.org/cto/d/1983-lincoln-continental-mark-vi/7756438323.html",
-            "price": "$5,000",
-            "location": "Guanica, PR"
-        }
-    ],
-    [
-        {
-            "index": 29,
-            "title": "Fiat 500 L 2014",
-            "href": "https://puertorico.craigslist.org/cto/d/fiat-500-2014/7756418063.html",
-            "price": "$3,000",
-            "location": "Canovanas"
-        }
-    ],
-    [
-        {
-            "index": 30,
-            "title": "1987 Nissan Sentra, Excellent ,low miles",
-            "href": "https://puertorico.craigslist.org/cto/d/1987-nissan-sentra-excellent-low-miles/7755420500.html",
-            "price": "$7,900",
-            "location": "Quebradillas"
-        }
-    ],
-    [
-        {
-            "index": 31,
-            "title": "TOYOTA COROLLA 2022 SE AUTOMATICO SALDO",
-            "href": "https://puertorico.craigslist.org/cto/d/toyota-corolla-2022-se-automatico-saldo/7753648254.html",
-            "price": "$19,800",
-            "location": "Bayamon"
+            "title": "Microsoft Surface Laptop 4 - 15\" touch Ryzen 7, 16GB RAM, 256GB SSD",
+            "href": "https://portland.craigslist.org/wsc/sys/d/beaverton-microsoft-surface-laptop/7766877367.html",
+            "price": "$375",
+            "location": "Hillsboro/Orenco"
         }
     ]
 ]

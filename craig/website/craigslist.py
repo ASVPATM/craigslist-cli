@@ -57,49 +57,49 @@ def fetchPage(query, search_index_bottom, search_index_top):
             ultimate.write_data(ultimate.file_json, config.json_listings)
             config.craigslist_array.append(new_listing)
 
-            print("Index: {}".format(x))
-            print("Title: {}".format(title))
-            print("URL: {}".format(href))
-            print("Price: {}".format(price))
-            print("Location: {}".format(location))
+            print(Fore.BLACK + "Index: "+ Fore.RED + "{}".format(x))
+            print(Fore.CYAN +"Title: {}".format(title))
+            print(Fore.LIGHTWHITE_EX + "URL: {}".format(href))
+            print(Fore.GREEN + "Price: {}".format(price))
+            print(Fore.YELLOW + "Location: {}".format(location))
     elif len(listings) == 2:
         print("\n")
-        print("Index: {}".format(0))
+        print(Fore.BLACK + "Index: "+ Fore.RED + "{}".format(0))
         listing = listings[0]
         title = listing.find('div', class_='title').text
         href = listing.find('a')['href']
         price = listing.find('div', class_='price').text
         location = listing.find('div', class_='location').text.strip()
-        print("Title: {}".format(title))
-        print("URL: {}".format(href))
-        print("Price: {}".format(price))
-        print("Location: {}".format(location))
+        print(Fore.CYAN +"Title: {}".format(title))
+        print(Fore.LIGHTWHITE_EX + "URL: {}".format(href))
+        print(Fore.GREEN + "Price: {}".format(price))
+        print(Fore.YELLOW + "Location: {}".format(location))
         config.looking_answer = 'n'
 
         print("\n")
-        print("Index: {}".format(1))
+        print(Fore.BLACK + "Index: "+ Fore.RED + "{}".format(1))
         listing = listings[1]
         title = listing.find('div', class_='title').text
         href = listing.find('a')['href']
         price = listing.find('div', class_='price').text
         location = listing.find('div', class_='location').text.strip()
-        print("Title: {}".format(title))
-        print("URL: {}".format(href))
-        print("Price: {}".format(price))
-        print("Location: {}".format(location))
+        print(Fore.CYAN +"Title: {}".format(title))
+        print(Fore.LIGHTWHITE_EX + "URL: {}".format(href))
+        print(Fore.GREEN + "Price: {}".format(price))
+        print(Fore.YELLOW + "Location: {}".format(location))
         config.looking_answer = 'n'
     elif len(listings) == 1:
         print("\n")
-        print("Index: {}".format(x))
+        print(Fore.BLACK + "Index: "+ Fore.RED + "{}".format(x))
         listing = listings[0]
         title = listing.find('div', class_='title').text
         href = listing.find('a')['href']
         price = listing.find('div', class_='price').text
         location = listing.find('div', class_='location').text.strip()
-        print("Title: {}".format(title))
-        print("URL: {}".format(href))
-        print("Price: {}".format(price))
-        print("Location: {}".format(location))
+        print(Fore.CYAN +"Title: {}".format(title))
+        print(Fore.LIGHTWHITE_EX + "URL: {}".format(href))
+        print(Fore.GREEN + "Price: {}".format(price))
+        print(Fore.YELLOW + "Location: {}".format(location))
         config.looking_answer = 'n'
     else:
         print("\nNo Results")
