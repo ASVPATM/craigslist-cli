@@ -2,3 +2,5 @@ cdifflib
 bs4
 unidecode
 urllib3
+fontstyle
+matplotlib
