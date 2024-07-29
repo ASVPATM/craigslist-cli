@@ -2,7 +2,6 @@ import os
 from colorama import Fore, Back, Style
 from website import ultimate
 import webbrowser
-from PIL import Image
 import fontstyle
 
 

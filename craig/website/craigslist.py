@@ -32,9 +32,11 @@ def fetchPage(query, search_index_bottom, search_index_top):
     listings = soup.findAll('li', class_='cl-static-search-result')
     
     
-    if len(listings) > 2:
+    if len(listings) > 3:
         for x in range(search_index_bottom, search_index_top):
             print("\n")
+            print(len(listings))
+            print(x)
             listing = listings[x]
             title = listing.find('div', class_='title').text
             href = listing.find('a')['href']

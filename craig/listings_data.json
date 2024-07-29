@@ -2,55 +2,28 @@
     [
         {
             "index": 0,
-            "title": "Laptop bag",
-            "href": "https://portland.craigslist.org/clk/sop/d/vancouver-laptop-bag/7762646790.html",
-            "price": "$15",
-            "location": "Vancouver"
+            "title": "Acer Nitro5 Gaming Laptop, 9th Gen Intel Core i5-9300H, GTX 1650, 15.6 IPS 144 m",
+            "href": "https://portland.craigslist.org/wsc/sys/d/portland-acer-nitro5-gaming-laptop-9th/7770120734.html",
+            "price": "$300",
+            "location": "Portland"
         }
     ],
     [
         {
             "index": 1,
-            "title": "Laptop bag",
-            "href": "https://portland.craigslist.org/clk/sop/d/vancouver-laptop-bag/7762959891.html",
-            "price": "$20",
-            "location": "Vancouver"
+            "title": "Predator 17 Gaming Laptop",
+            "href": "https://portland.craigslist.org/clc/sys/d/sandy-predator-17-gaming-laptop/7764090061.html",
+            "price": "$500",
+            "location": "Sandy"
         }
     ],
     [
         {
             "index": 2,
-            "title": "NIB Leather Wheeled 17\" Laptop Case",
-            "href": "https://portland.craigslist.org/wsc/for/d/portland-nib-leather-wheeled-17-laptop/7767544529.html",
-            "price": "$60",
-            "location": "NW Portland"
-        }
-    ],
-    [
-        {
-            "index": 3,
-            "title": "4gb SDRAM Laptop Ram",
-            "href": "https://portland.craigslist.org/wsc/sop/d/beaverton-4gb-sdram-laptop-ram/7765597807.html",
-            "price": "$15",
-            "location": "Beaverton"
-        }
-    ],
-    [
-        {
-            "index": 4,
-            "title": "HP Laptop i3 15.6\" Touch Screen, Web Cam",
-            "href": "https://portland.craigslist.org/clc/sys/d/colton-hp-laptop-i3-156-touch-screen/7761709410.html",
-            "price": "$90",
-            "location": "Colton"
-        }
-    ],
-    [
-        {
-            "index": 5,
-            "title": "Microsoft Surface Laptop 4 - 15\" touch Ryzen 7, 16GB RAM, 256GB SSD",
-            "href": "https://portland.craigslist.org/wsc/sys/d/beaverton-microsoft-surface-laptop/7766877367.html",
-            "price": "$375",
-            "location": "Hillsboro/Orenco"
+            "title": "Hewlett-Packard laptop docking station",
+            "href": "https://portland.craigslist.org/mlt/sys/d/portland-hewlett-packard-laptop-docking/7766503963.html",
+            "price": "$10",
+            "location": "SW"
         }
     ]
 ]

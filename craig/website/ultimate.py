@@ -272,6 +272,7 @@ def all_together():
                 setting_price()
             elif searching_input == 4:
                 city()
+                handle_Region_Area(config.region)
             elif searching_input == 5:
                     while True:
                                 try:
