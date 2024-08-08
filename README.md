@@ -9,7 +9,7 @@ Clone The Directory
 
 **Python3**
 ```
-cd craiglist-cli; cd craig
+cd craigslist-cli; cd craig
 ```
 **Install Dependencies**
 ```
